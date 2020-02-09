@@ -1,0 +1,58 @@
+
+sudo su		SuperUserDo
+
+ls		list   			fk@debian:/home$ ls
+
+cd
+O cd é um dos principais comandos do Linux e você deve realmente aprender . Também é um dos mais usados, pois com ele, podemos navegar entre os diretórios. Usá-lo é bastante simples, basta digitar o nome da pasta que você quer acessar do seu diretório atual. Se você quiser regressar, faça isso usando dois pontos (..) ao invés do nome da pasta.
+Digamos que eu esteja no diretório /home e eu queira entrar no diretório /usr que está sempre em /home. Posso usá-lo da seguinte forma:
+
+sempreupdate@debian:/home$ cd usr
+
+sempreupdate@debian:/home/usr$
+mkdir
+Geralmente, em algumas ocasioes precisamos criar uma nova pasta ou subpasta. Para isso existe o comando mkdir. Basta dar o nome da sua pasta após o comando mkdir no seu terminal.
+
+
+mkdir nome_da_pasta
+cp
+copiar e colar é a tarefa importante que fazemos diariamente via interface gráfica. O comando cp nos auxiliará na função copiar e colar usando o terminal. Primeiro, você determina o arquivo que deseja copiar e digita o local de destino para colar o arquivo.
+
+cp nome_do_arquivo local_de_destino
+Nota: Se você estiver copiando arquivos para o diretório que requer permissão de administrador para qualquer novo arquivo, então você precisará usar o comando sudo.
+
+
+rm
+O rm é usado para excluir um arquivo ou até mesmo um diretório. Você pode usar a flag -r para fazer uma remoção recursiva e apagar pastas, subpastas entre outros arquivos dentro do diretório.
+
+rm meu_arquivo.txt
+
+ou
+
+rm -R nome_da_pasta
+apt
+Este comando se difere entre as inúmeras distribuições. Nas distribuições Linux baseadas em Debian, para instalar, remover e atualizar qualquer pacote usamos o gerenciador de pacotes Advanced Packaging Tool (APT). O comando apt irá ajudá-lo a instalar o software que você precisa para executar no seu Linux. É uma poderosa ferramenta de linha de comando que permite a instalação, atualização e remoção do software.
+
+Temos uma post que trata dos gerenciadores de pacotes em outras distribuições, basta clicar no link para ter acesso.
+
+sudo apt update
+grep
+Você precisa encontrar um palavra em um arquivo, mas não sabe como? O grep pode resolver este problema. Com ele você pode localizar palavras-chaves dentro de um arquivo, filtrar a saída de comandos que por natureza podem encher o seu terminal de informações, veja abaixo alguns exemplos:
+
+grep nome_de_usuario /etc/passwd
+
+ou
+
+history | grep git
+cat
+Outra função bastante usada é consultar o conteúdo de algum arquivo de texto ou script. Para esse fim, o comando cat é um dos primeiros a ser lembrado. Ele mostrará o texto dentro do um arquivo.
+
+cat nome_do_arquivo.txt
+shutdown
+E o último comando é o shutdown. Sua importância é simples e de suma importância, com ele você pode desligar ou reiniciar o computador pelo terminal. Não se esqueça de adicionar o sudo no início do comando, pois ele precisa de permissão especiais para ser executado. Para desligar use a flag -h e para reiniciar use a flag -r.
+
+
+sudo shotdown -h now
+sudo shutdown -r now
+Conclusão
+Neste artigo você viu uma pequena introdução, com comandos importantes e que são bastante usados no dia a dia com o Linux. Como foi dito anteriormente, esses comandos básicos não fará de você um especialista, porém servirá de guia para práticas futuras. É fortemente recomendado que você aplique esses comandos, usando em diferentes situações para que aprenda definitivamente. Espero que esta dica de alguma forma tenha ajudado. Não deixe de acompanhar o nosso site e compartilhe com seus amigos que estão dando os primeiros passos no universo Linux.
